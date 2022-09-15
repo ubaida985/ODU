@@ -381,7 +381,7 @@ main {
 
 /* --------------- Site title ---------------- */
 main .site-title {
-    background: url('../assets/Background-image.png');
+    background: url('../assets/other/Background-image.png');
     background-size: cover;
     height: 110vh;
     display: flex;
@@ -506,7 +506,7 @@ main .post-content {
 
 main .site-content .post-content>.post-image,
 .post-title {
-    padding: 1rem 2rem;
+    padding: 3rem 1rem;
     position: relative;
 }
 
@@ -1007,3 +1007,18 @@ footer.footer .move-up span:hover {
 }
 
 /*        x      Viewport less then or equal to 520px       x     */
+label{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+select{
+    outline: none;
+    padding: 0.5rem 1rem;
+    background-color:#fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+}

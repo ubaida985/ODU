@@ -18,6 +18,10 @@
     <!-- ------------ AOS Library ------------------------- -->
     <link rel="stylesheet" href="./css/aos.css">
 
+    <!---------------- Plotly Library ------------------------->
+    <script src="https://cdn.plot.ly/plotly-2.14.0.min.js"></script>
+    <script src="./js/plotly.js"></script>
+
     <!-- Custom Style   -->
     <link rel="stylesheet" href="./css/Style.css">
 
@@ -66,17 +70,17 @@
     </nav> -->
     <nav>
         <div id="leftDiv">
-            <img src="./assets/images/logo.svg" alt="Acharya Logo">
+            <img src="./assets/other/acharya.png" alt="Acharya Logo">
         </div>
         <div id="mainMenu">
             <ul>
-                <li data-text="Home"><a href="./Index.html">Home</a></li>
-                <li id="blog" data-text="Blogs"><a href=".#blogs">Blogs</a></li>
-                <li id="topPost" data-text="Top Posts"><a href="#topPosts">TopPosts</a></li>
-                <li data-text="Log In"><a href="./login.html">Log in</a></li>
-                <li data-text="Sign Up"><a href="./signup.html">Sign up</a></li>
-                <li data-text="Team"><a href="./Index.html#team">Team</a></li>
-                <li id="contacts" data-text="Contact Us"><a href="#contact">Contact Us</a></li>
+                <li class="navLink" id="home" data-text="Home"><a href="#">Home</a></li>
+                <li class="navLink" id="visual" data-text="Data Visualization"><a href=".#visuals">Dataset Visualization</a></li>
+                <li class="navLink" id="dataset" data-text="Dataset"><a href="#datasets">Dataset</a></li>
+                <li class="navLink" id="relation" data-text="Relations"><a href="#relations">Relations</a></li>
+                <li class="navLink" id="trial" data-text="Try it yourself!"><a href="#contact">Try it yourself!</a></li>
+                <li class="navLink" id="team" data-text="Team"><a href="#teams">Team</a></li>
+                <li class="navLink" id="footer" data-text="Social Links"><a href="#footers">Social Links</a></li>
             </ul>
         </div>
         <div id="rightDiv">
@@ -104,12 +108,12 @@
 
         <!-- --------------------- Blog Carousel ----------------- -->
 
-        <section>
+        <section id="visuals">
             <div id="blogs" class="blog">
                 <div class="container">
                     <div class="owl-carousel owl-theme blog-post">
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/Blog-post/blog1.png" alt="blog1">
+                            <img src="./assets/dataset/dia.png" alt="blog1">
                             <div class="blog-title">
                                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                                 <button class="btn btn-blog">Education</button>
@@ -117,7 +121,7 @@
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
-                            <img src="./assets/Blog-post/blog2.png" alt="blog1">
+                            <img src="./assets/dataset/edu.png" alt="blog1">
                             <div class="blog-title">
                                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                                 <button class="btn btn-blog">Welfare</button>
@@ -125,7 +129,7 @@
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
-                            <img src="./assets/Blog-post/blog3.png" alt="blog1">
+                            <img src="./assets/dataset/health.png" alt="blog1">
                             <div class="blog-title">
                                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                                 <button class="btn btn-blog">Finance</button>
@@ -133,7 +137,7 @@
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/Blog-post/blog4.png" alt="blog1">
+                            <img src="./assets/dataset/jhgfhjg.png" alt="blog1">
                             <div class="blog-title">
                                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                                 <button class="btn btn-blog">Fashion</button>
@@ -141,7 +145,7 @@
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/Blog-post/blog1.png" alt="blog1">
+                            <img src="./assets/dataset/kjhtg.png" alt="blog1">
                             <div class="blog-title">
                                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                                 <button class="btn btn-blog">Fundraiser</button>
@@ -149,7 +153,7 @@
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/Blog-post/blog6.png" alt="blog1">
+                            <img src="./assets/dataset/kk.png" alt="blog1">
                             <div class="blog-title">
                                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                                 <button class="btn btn-blog">Plantation Drive</button>
@@ -158,7 +162,106 @@
                         </div>
 
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/Blog-post/blog7.png" alt="blog1">
+                            <img src="./assets/dataset/ll.png" alt="blog1">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <button class="btn btn-blog">Education</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/dataset/logic vs alcohol.png" alt="blog1">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <button class="btn btn-blog">Education</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/dataset/lok.png" alt="blog1">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <button class="btn btn-blog">Education</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/dataset/male-female.png" alt="blog1">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <button class="btn btn-blog">Education</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/dataset/male-female.png" alt="blog1">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <button class="btn btn-blog">Education</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/dataset/newplot.png" alt="blog1">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <button class="btn btn-blog">Education</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/dataset/okj.png" alt="blog1">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <button class="btn btn-blog">Education</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/dataset/output.png" alt="blog1">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <button class="btn btn-blog">Education</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/dataset/Para.png" alt="blog1">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <button class="btn btn-blog">Education</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/dataset/pogu.png" alt="blog1">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <button class="btn btn-blog">Education</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/dataset/tt.png" alt="blog1">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <button class="btn btn-blog">Education</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/dataset/uyiyu.png" alt="blog1">
                             <div class="blog-title">
                                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                                 <button class="btn btn-blog">Education</button>
@@ -178,13 +281,12 @@
 
         <!-- ---------------------- Site Content -------------------------->
 
-        <section class="container">
+        <section id="relations" class="container">
             <div class="site-content">
                 <div class="posts">
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
+                    <div  class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphOne" class="post-image">
                             <div>
-                                <img src="./assets/Blog-post/blog1.png" class="img" alt="blog1">
                             </div>
                             <div class="post-info flex-row">
                                 <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
@@ -193,8 +295,7 @@
                             </div>
                         </div>
                         <div class="post-title">
-                            <a href="#">Why should boys have all the fun? it's the women who are making india an
-                                alcohol-loving contry</a>
+                            <a href="#">Here's a relation between lorem and ipsum</a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
                                 adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
                                 nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
@@ -205,9 +306,8 @@
                     </div>
                     <hr>
                     <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
+                        <div id="graphTwo" class="post-image">
                             <div>
-                                <img src="./assets/Blog-post/blog2.png" class="img" alt="blog1">
                             </div>
                             <div class="post-info flex-row">
                                 <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
@@ -216,8 +316,7 @@
                             </div>
                         </div>
                         <div class="post-title">
-                            <a href="#">Why should boys have all the fun? it's the women who are making india an
-                                alcohol-loving contry</a>
+                            <a href="#">Here's a relation between lorem and ipsum</a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
                                 adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
                                 nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
@@ -228,9 +327,8 @@
                     </div>
                     <hr>
                     <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
+                        <div id="graphThree" class="post-image">
                             <div>
-                                <img src="./assets/Blog-post/blog3.png" class="img" alt="blog1">
                             </div>
                             <div class="post-info flex-row">
                                 <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
@@ -239,7 +337,7 @@
                             </div>
                         </div>
                         <div class="post-title">
-                            <a href="#">New data recording system to better analyse road accidents</a>
+                            <a href="#">Here's a relation between lorem and ipsum</a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
                                 adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
                                 nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
@@ -250,9 +348,8 @@
                     </div>
                     <hr>
                     <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
+                        <div id="graphFour" class="post-image">
                             <div>
-                                <img src="./assets/Blog-post/blog4.png" class="img" alt="blog1">
                             </div>
                             <div class="post-info flex-row">
                                 <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
@@ -261,7 +358,7 @@
                             </div>
                         </div>
                         <div class="post-title">
-                            <a href="#">New data recording system to better analyse road accidents</a>
+                            <a href="#">Here's a relation between lorem and ipsum</a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
                                 adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
                                 nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
@@ -270,129 +367,352 @@
                             <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
-
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphFive" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphSix" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphSeven" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphEight" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphNine" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphTen" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphEleven" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphTwelve" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphThirteen" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphFourteen" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphFifteen" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div id="graphSixteen" class="post-image">
+                            <div>
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Here's a relation between lorem and ipsum</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <aside class="sidebar">
+                <aside id="datasets" class="sidebar">
                     <div class="popular-post" id="topPosts">
-                        <h2>About the Dataset</h2>
+                        <h2>Link to the Datasets</h2>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="200">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-1.jpg" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Date</span>
+                                    <span>Size</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Data Lorem ipsum dolor sit amet consectetur</a>
                             </div>
                         </div>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="200">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-1.jpg" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Date</span>
+                                    <span>Size</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Data Lorem ipsum dolor sit amet consectetur</a>
                             </div>
                         </div>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="200">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-1.jpg" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Date</span>
+                                    <span>Size</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Data Lorem ipsum dolor sit amet consectetur</a>
                             </div>
                         </div>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="300">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-2.jpg" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Date</span>
+                                    <span>Size</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Data Lorem ipsum dolor sit amet consectetur</a>
                             </div>
                         </div>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="400">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-3.jpg" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Date</span>
+                                    <span>Size</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Data Lorem ipsum dolor sit amet consectetur</a>
                             </div>
                         </div>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="500">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-4.jpg" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Date</span>
+                                    <span>Size</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Data Lorem ipsum dolor sit amet consectetur</a>
                             </div>
                         </div>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="600">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-5.jpg" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Date</span>
+                                    <span>Size</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Data Lorem ipsum dolor sit amet consectetur</a>
                             </div>
                         </div>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="200">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-1.jpg" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Date</span>
+                                    <span>Size</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Data Lorem ipsum dolor sit amet consectetur</a>
                             </div>
                         </div>
                     </div>
@@ -402,7 +722,7 @@
         </section>
 
         <!-- TEAM -->
-        <section id="team">
+        <section id="teams">
             <div class="blog">
                 <div class="container">
                     <div class="owl-carousel owl-theme blog-post">
@@ -453,12 +773,139 @@
         <div class="container">
             <div class="infoContainer" data-aos="fade-right" data-aos-delay="200">
                 <div>
-                    <h2>Contact Us</h2>
+                    <h2>Try it yourself!</h2>
                     <ul class="info">
                         <li>
-                            <span> <i class="fa fa-envelope" aria-hidden="true"></i> </span>
-                            <span> example@gmail.com </span>
+                            <label for="xaxis">X axis:</label>
+
+                            <select onchange="optionSelected(this)" name="xaxis" id="xaxis">
+                                <optgroup label="CVD">
+                                    <option value="ldl">LDL</option>
+                                    <option value="tobacco">Tobacco</option>
+                                    <option value="alcohol">Alcohol</option>
+                                    <option value="sbp">SBP</option>
+                                    <option value="adiposity">Adiposity</option>
+                                    <option value="famhist">Family History</option>
+                                    <option value="typea">TypeA</option>
+                                    <option value="obesity">Obesity</option>
+                                    <option value="age">Age</option>
+                                    <option value="chd">CHD</option>
+                                </optgroup>
+                                <optgroup label="Performance">
+                                    <option value="sex">Sex</option>
+                                    <option value="agep">Age</option>
+                                    <option value="address">Address</option>
+                                    <option value="famsize">Family Size</option>
+                                    <option value="pstatus">Parental Status</option>
+                                    <option value="medu">Mother's Education</option>
+                                    <option value="fedu">Father's Education</option>
+                                    <option value="travelTime">Travel Time</option>
+                                    <option value="studyTime">Study Time</option>
+                                    <option value="failures">Failures</option>
+                                    <option value="schoolsup">Schooling Status</option>
+                                    <option value="famsup">Family Status</option>
+                                    <option value="paid_x">Paid X</option>
+                                    <option value="activities">Activities</option>
+                                    <option value="nursery">Nursery</option>
+                                    <option value="higher">Higher</option>
+                                    <option value="internet">Internet</option>
+                                    <option value="romantic">Romantic</option>
+                                    <option value="famrel">Family Relationship</option>
+                                    <option value="goout">Goes Out</option>
+                                    <option value="dalc">D Alcohol</option>
+                                    <option value="dalc">W Alcohol</option>
+                                    <option value="health">Health</option>
+                                    <option value="absences">Absences</option>
+                                    <option value="G1_Mat">G1_Mat</option>
+                                    <option value="G2_Mat">G2_Mat</option>
+                                    <option value="G3_Mat">G3_Mat</option>
+                                    <option value="G1_Por">G1_Por</option>
+                                    <option value="G2_Poe">G2_Por</option>
+                                    <option value="G3_Por">G3_Por</option>
+                                    <option value="paid_y">Paid Y</option>      
+                                </optgroup>
+                             
+                                <optgroup label="Quality of Life">
+                                    <option value="index">Index</option>
+                                    <option value="ageQ">Age</option>
+                                    <option value="education">Education</option>
+                                    <option value="maritalStatus">Marital Status</option>
+                                    <option value="occupation">Occupation</option>
+                                    <option value="socioEconomicStatus">Socio Economic Status</option>
+                                    <option value="comorbidity">Comorbidity</option>
+                                    <option value="tobaccoUse">Tobacco Use</option>
+                                    <option value="alcoholUse">Alcohol Use</option>
+                                    <option value="qol">Quality of Life</option>
+                                </optgroup>
+                             
+                            </select>
                         </li>
+                        <li>
+                            <label for="yaxis">Y axis:</label>
+
+                            <select onchange="dynamicChart(this)" name="yaxis" id="yaxis">
+                                <optgroup label="CVD">
+                                    <option value="ldl">LDL</option>
+                                    <option selected value="tobacco">Tobacco</option>
+                                    <option value="alcohol">Alcohol</option>
+                                    <option value="sbp">SBP</option>
+                                    <option value="adiposity">Adiposity</option>
+                                    <option value="famhist">Family History</option>
+                                    <option value="typea">TypeA</option>
+                                    <option value="obesity">Obesity</option>
+                                    <option value="age">Age</option>
+                                    <option value="chd">CHD</option>
+                                </optgroup>
+                                <optgroup label="Performance">
+                                    <option value="sex">Sex</option>
+                                    <option value="agep">Age</option>
+                                    <option value="address">Address</option>
+                                    <option value="famsize">Family Size</option>
+                                    <option value="pstatus">Parental Status</option>
+                                    <option value="medu">Mother's Education</option>
+                                    <option value="fedu">Father's Education</option>
+                                    <option value="travelTime">Travel Time</option>
+                                    <option value="studyTime">Study Time</option>
+                                    <option value="failures">Failures</option>
+                                    <option value="schoolsup">Schooling Status</option>
+                                    <option value="famsup">Family Status</option>
+                                    <option value="paid_x">Paid X</option>
+                                    <option value="activities">Activities</option>
+                                    <option value="nursery">Nursery</option>
+                                    <option value="higher">Higher</option>
+                                    <option value="internet">Internet</option>
+                                    <option value="romantic">Romantic</option>
+                                    <option value="famrel">Family Relationship</option>
+                                    <option value="goout">Goes Out</option>
+                                    <option value="dalc">D Alcohol</option>
+                                    <option value="dalc">W Alcohol</option>
+                                    <option value="health">Health</option>
+                                    <option value="absences">Absences</option>
+                                    <option value="G1_Mat">G1_Mat</option>
+                                    <option value="G2_Mat">G2_Mat</option>
+                                    <option value="G3_Mat">G3_Mat</option>
+                                    <option value="G1_Por">G1_Por</option>
+                                    <option value="G2_Poe">G2_Por</option>
+                                    <option value="G3_Por">G3_Por</option>
+                                    <option value="paid_y">Paid Y</option>      
+                                </optgroup>
+                             
+                                <optgroup label="Quality of Life">
+                                    <option value="index">Index</option>
+                                    <option value="ageQ">Age</option>
+                                    <option value="education">Education</option>
+                                    <option value="maritalStatus">Marital Status</option>
+                                    <option value="occupation">Occupation</option>
+                                    <option value="socioEconomicStatus">Socio Economic Status</option>
+                                    <option value="comorbidity">Comorbidity</option>
+                                    <option value="tobaccoUse">Tobacco Use</option>
+                                    <option value="alcoholUse">Alcohol Use</option>
+                                    <option value="qol">Quality of Life</option>
+                                </optgroup>
+                             
+                            </select>
+                        </li>
+                <!--       
                         <li>
                             <span><i class="fa fa-phone" aria-hidden="true"></i></span>
                             <span>+91991121212</span>
@@ -468,6 +915,7 @@
                             <span>Department of Computer Science, Acharya Institute of Techonlogy, Bangalore, Karnataka
                                 - 560107</span>
                         </li>
+                    -->    
                     </ul>
                 </div>
                 <ul class="sci">
@@ -485,8 +933,8 @@
                         </a></li>
                 </ul>
             </div>
-            <div class="formContainer" data-aos="fade-left" data-aos-delay="200">
-                <div class="contactForm">
+            <div id="formContainer" class="formContainer" data-aos="fade-left" data-aos-delay="200">
+     <!--           <div class="contactForm">
                     <h2>Send A Message</h2>
                     <div class="formBox">
                         <div class="inputBox w50">
@@ -509,6 +957,7 @@
                             <input type="submit" value="Send">
                         </div>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
@@ -517,7 +966,7 @@
 
     <!-- --------------------------- Footer ---------------------------------------- -->
 
-    <footer class="footer">
+    <footer id="footers" class="footer">
         <div class="container">
             <div class="about-us" data-aos="fade-right" data-aos-delay="200">
                 <h2>About the Project</h2>
@@ -578,6 +1027,9 @@
 
     <!-- ------------ AOS js Library  ------------------------- -->
     <script src="./js/aos.js"></script>
+
+    <!-- ------------ PLOTLY GRAPHS  ------------------------- -->
+    <script src="./js/plotly/cvd.js"></script>
 
     <!-- Custom Javascript file -->
     <script src="./js/navbar.js"></script>

@@ -1,8 +1,11 @@
 const rightDiv = document.getElementById("rightDiv");
-const contact = document.getElementById("contacts");
-const topPost = document.getElementById("topPost");
-const blog = document.getElementById("blog");
+const home = document.getElementById("home");
+const visual = document.getElementById("visual");
+const dataset = document.getElementById("dataset");
+const relation = document.getElementById("relation");
+const trial = document.getElementById("trial");
 const team = document.getElementById("team");
+const footer = document.getElementById("footer");
 const mainMenu = document.getElementById("mainMenu");
 let menuOpen = false;
 rightDiv.addEventListener('click', () => {
@@ -16,16 +19,25 @@ rightDiv.addEventListener('click', () => {
         menuOpen = false;
     }
 });
-contact.addEventListener('click', () => {
+home.addEventListener('click', () => {
+    menuHandler();
+});
+visual.addEventListener('click', () => {
+    menuHandler();
+});
+dataset.addEventListener('click', () => {
+    menuHandler();
+});
+relation.addEventListener('click', () => {
+    menuHandler();
+});
+trial.addEventListener('click', () => {
     menuHandler();
 });
 team.addEventListener('click', () => {
     menuHandler();
 });
-topPost.addEventListener('click', () => {
-    menuHandler();
-});
-blog.addEventListener('click', () => {
+footer.addEventListener('click', () => {
     menuHandler();
 });
 const menuHandler = () => {
